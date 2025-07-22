@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goa Tourist Holiday Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="icon-logo.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Loading Animation -->
+    <div id="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" style="display: none">
+      <!-- Header -->
+      <header id="home">
+        <img src="logo.png" alt="Goa Tourist Holiday Home" class="logo" />
+        <h1>Goa Tourist Holiday Home</h1>
+        <p><strong>NIBESH</strong><br />Owner</p>
+        <div class="contact-options">
+          <a href="tel:8805504373"><i class="fas fa-phone-alt"></i> Call</a>
+          <a href="https://wa.me/918805504373" target="_blank"
+            ><i class="fab fa-whatsapp"></i> WhatsApp</a
+          >
+          <a href="mailto:nibeshsarkar25@gmail.com"
+            ><i class="fas fa-envelope"></i> Mail</a
+          >
+          <a
+            href="https://maps.google.com/?q=H+NO+111/1+F3C+MAINATH+BHATI+ARPORA+BARDEZ+GOA+403516"
+            target="_blank"
+            ><i class="fas fa-map-marker-alt"></i> Direction</a
+          >
+        </div>
+        <div class="qr-code">
+          <img src="qrcode.png" alt="QR Code for Business Card" />
+          <p>Scan to save contact</p>
+        </div>
+      </header>
+
+      <!-- Nav bar -->
+
+      <nav id="mainNav">
+        <div class="nav-container">
+          <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <ul id="navMenu">
+            <li>
+              <a href="#home"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+            </li>
+            <li>
+              <a href="#products"
+                ><i class="fas fa-concierge-bell"></i> Services</a
+              >
+            </li>
+            <!-- <li>
+            <a href="#gallery"><i class="fas fa-images"></i> Gallery</a>
+          </li> -->
+            <li>
+              <a href="#payment"><i class="fas fa-rupee-sign"></i> Payment</a>
+            </li>
+            <li>
+              <a href="#feedback"
+                ><i class="fas fa-comment-alt"></i> Feedback</a
+              >
+            </li>
+            <li>
+              <a href="#contact"><i class="fas fa-address-book"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-contact-info" id="mobileContactInfo">
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>8805504373</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>nibeshsarkar25@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>H NO 111/1 F3C MAINATH BHATI ARPORA BARDEZ GOA 403516</span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Welcome Page -->
+      <section id="home">
+        <h2>Welcome</h2>
+        <p>
+          Welcome to Your Slice of Paradise in Goa! <br />
+          <br />
+          &nbsp;&nbsp;&nbsp; Thank you for choosing our <b>luxurious villa</b> —
+          where elegance meets tropical charm. Get ready to unwind in your own
+          <b>private pool</b>, soak in the Goan sun, and experience comfort like
+          never before. Whether it’s a romantic getaway, a family vacation, or a
+          fun trip with friends — we promise you an unforgettable stay filled
+          with joy, relaxation, and memories that last a lifetime. 🌊🍹 🏡 Your
+          villa is ready. The pool is waiting. And Goa is calling. We’re
+          thrilled to have you with us — let the good times begin! 🎉
+        </p>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          Welcome to your ultimate escape in the heart of <b>Goa</b> — where
+          luxury, privacy, and tropical beauty come together. <br />
+          &nbsp;&nbsp;&nbsp;Our handpicked private pool villas offer an
+          exclusive experience for travelers who crave both comfort and class.
+          Whether you're planning a romantic retreat, a fun-filled group
+          vacation, or a peaceful family stay, our villas are designed to give
+          you the perfect balance of <b>relaxation</b>, <b>elegance</b>, and
+          <b>freedom</b> .
+        </p>
+        <h3>What Makes Us Special?</h3>
+        <li>
+          🌊 Your very own <b>private pool </b>— no crowds, no interruptions.
+        </li>
+        <li>🛏️ Premium interiors with <b>fully furnished living spaces</b>.</li>
+        <li>🏝️ Prime location near Goa’s top beaches, cafes, and nightlife.</li>
+        <li>🧘‍♂️ Total privacy and 24/7 hospitality for a stress-free stay.</li>
+        <p>
+          From sunrise pool dips to sunset cocktails under the stars, every
+          moment here is made for memories. Come, stay with us — and discover
+          Goa like never before.
+        </p>
+      </section>
+
+      <!-- Booking -->
+      <section id="booking">
+        <h2>Book Appointment</h2>
+        <form id="bookingForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="tel" id="phone" placeholder="Phone Number" required />
+          <input type="date" id="date" required />
+          <textarea id="message" placeholder="Appointment purpose"></textarea>
+          <button type="submit">Send to WhatsApp</button>
+        </form>
+      </section>
+
+      <!-- Products -->
+      <section id="products">
+        <h2>Our Services</h2>
+        <div class="card-grid">
+          <div class="card">
+            <img src="villa1.jpeg" alt="Villa2" />
+            <h3>6BHK Villa with Pool</h3>
+            <!-- <p>₹ 5000/night</p> -->
+            <a href="6bhk/6bhk.html" class="btn">Visit Now</a>
+          </div>
+          <div class="card">
+            <img src="villa2.jpeg" alt="Villa1" />
+            <h3>5BHK Villa with Pool</h3>
+            <!-- <p>₹ 5000/night</p> -->
+            <a href="5bhk/5bhk.html" class="btn">Visit Now</a>
+          </div>
+
+          <div class="card">
+            <img src="villa3.jpeg" alt="Villa3" />
+            <h3>4BHK Villa with Pool</h3>
+            <!-- <p>₹ 5000/night</p> -->
+            <a href="4bhk/4bhk.html" class="btn">Visit Now</a>
+          </div>
+          <div class="card">
+            <img src="villa4.jpeg" alt="Villa4" />
+            <h3>3BHK Villa with Pool</h3>
+            <!-- <p>₹ 5000/night</p> -->
+            <a href="3bhk/3bhk.html" class="btn">Visit Now</a>
+          </div>
+          <div class="card">
+            <img src="villa5.jpeg" alt="Villa5" />
+            <h3>2BHK Villa with Pool</h3>
+            <!-- <p>₹ 5000/night</p> -->
+            <a href="2bhk/2bhk.html" class="btn">Visit Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feedback -->
+      <section id="feedback">
+        <h2>Customer Feedback</h2>
+        <form id="feedbackForm">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="tel"
+            name="contact"
+            placeholder="Your Contact"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Feedback"
+            required
+          ></textarea>
+          <label>Rate us:</label>
+          <select name="rating" required>
+            <option value="1">★☆☆☆☆</option>
+            <option value="2">★★☆☆☆</option>
+            <option value="3">★★★☆☆</option>
+            <option value="4">★★★★☆</option>
+            <option value="5">★★★★★</option>
+          </select>
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </section>
+
+      <section id="feedback-display">
+        <h2>What Our Customers Say</h2>
+        <div id="feedbackList" class="feedback-container"></div>
+      </section>
+
+      <!-- Map Section -->
+      <section id="map">
+        <h2>Location</h2>
+        <iframe
+          src="https://maps.google.com/maps?q=H%20NO%20111/1%20F3C%20MAINATH%20BHATI%20ARPORA%20BARDEZ%20GOA%20403516&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="300"
+          frameborder="0"
+        ></iframe>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form
+          id="contactForm"
+          action="https://formsubmit.co/nibeshsarkar25@gmail.com"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Contact Form Submission"
+          />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="#contact" />
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div id="contactStatus"></div>
+      </section>
+
+      <!-- Payment Section -->
+      <section id="payment">
+        <h2>Make a Payment</h2>
+        <p>
+          Please scan the QR code or click the link below to make your payment
+          securely.
+        </p>
+        <img src="payment_qr.png" alt="Payment QR Code" width="200" />
+        <p>
+          <a href="https://www.payu.in/" target="_blank"
+            >Pay Now via UPI/Card</a
+          >
+        </p>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#products">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-phone"></i> 8805504373</p>
+            <p><i class="fas fa-envelope"></i> nibeshsarkar25@gmail.com</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> H NO 111/1 F3C MAINATH BHATI
+              ARPORA BARDEZ GOA 403516
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Goa Tourist Holiday Home. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

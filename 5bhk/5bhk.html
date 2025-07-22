@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5BHK Villa Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Luxury 5BHK Villa with Private Pool</h1>
+      <p>Experience comfort, style, and privacy in paradise</p>
+    </header>
+
+    <section class="villa-info">
+      <h2>Property Features</h2>
+      <ul>
+        <li>5 Spacious Bedrooms with Attached Bathrooms</li>
+        <li>Private Swimming Pool</li>
+        <li>Modern Kitchen & Dining Area</li>
+        <li>Outdoor Garden and Sit-out</li>
+        <li>Wi-Fi, AC, Power Backup</li>
+        <li>Located near Baga Beach, Goa</li>
+      </ul>
+      <!-- <p class="price">Starting at ₹15,000 / night</p> -->
+    </section>
+
+    <main>
+      <!-- Bedroom Slider -->
+      <section class="slider-section">
+        <h2>Bedrooms</h2>
+        <div class="slider" id="bedroomSlider">
+          <button class="prev" onclick="changeSlide('bedroom', -1)">
+            &#10094;
+          </button>
+          <img
+            class="slide bedroom-slide"
+            src="bedroom1.jpeg"
+            alt="Bedroom 1"
+          />
+          <img
+            class="slide bedroom-slide"
+            src="bedroom2.jpeg"
+            alt="Bedroom 2"
+          />
+          <img
+            class="slide bedroom-slide"
+            src="bedroom3.jpeg"
+            alt="Bedroom 3"
+          />
+          <button class="next" onclick="changeSlide('bedroom', 1)">
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <!-- Bathroom Slider -->
+      <section class="slider-section">
+        <h2>Bathrooms</h2>
+        <div class="slider" id="bathroomSlider">
+          <button class="prev" onclick="changeSlide('bathroom', -1)">
+            &#10094;
+          </button>
+          <img
+            class="slide bathroom-slide"
+            src="bathroom1.jpeg"
+            alt="Bathroom 1"
+          />
+          <img
+            class="slide bathroom-slide"
+            src="bathroom2.jpeg"
+            alt="Bathroom 2"
+          />
+          <button class="next" onclick="changeSlide('bathroom', 1)">
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <!-- Kitchen Slider -->
+      <section class="slider-section">
+        <h2>Kitchen</h2>
+        <div class="slider" id="kitchenSlider">
+          <!-- <button class="prev" onclick="changeSlide('kitchen', -1)">&#10094;</button> -->
+          <img
+            class="slide kitchen-slide"
+            src="kitchen1.jpeg"
+            alt="Kitchen 1"
+          />
+          <!-- <img class="slide kitchen-slide" src="kitchen2.jpg" alt="Kitchen 2"> -->
+          <!-- <button class="next" onclick="changeSlide('kitchen', 1)">&#10095;</button> -->
+        </div>
+      </section>
+
+      <!-- Dining Slider -->
+      <section class="slider-section">
+        <h2>Dining Area</h2>
+        <div class="slider" id="diningSlider">
+          <button class="prev" onclick="changeSlide('dining', -1)">
+            &#10094;
+          </button>
+          <img class="slide dining-slide" src="dining1.jpeg" alt="Dining 1" />
+          <img class="slide dining-slide" src="dining2.jpeg" alt="Dining 2" />
+          <button class="next" onclick="changeSlide('dining', 1)">
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <!-- Pool Slider -->
+      <section class="slider-section">
+        <h2>Swimming Pool</h2>
+        <div class="slider" id="poolSlider">
+          <button class="prev" onclick="changeSlide('pool', -1)">
+            &#10094;
+          </button>
+          <img class="slide pool-slide" src="pool1.jpeg" alt="Pool 1" />
+          <img class="slide pool-slide" src="pool2.jpeg" alt="Pool 2" />
+          <button class="next" onclick="changeSlide('pool', 1)">
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <!-- Outside Slider -->
+      <section class="slider-section">
+        <h2>Outside View</h2>
+        <div class="slider" id="outsideSlider">
+          <button class="prev" onclick="changeSlide('outside', -1)">
+            &#10094;
+          </button>
+          <img
+            class="slide outside-slide"
+            src="outside1.jpeg"
+            alt="Outside 1"
+          />
+          <img
+            class="slide outside-slide"
+            src="outside2.jpeg"
+            alt="Outside 2"
+          />
+          <img
+            class="slide outside-slide"
+            src="outside3.jpeg"
+            alt="Outside 3"
+          />
+          <button class="next" onclick="changeSlide('outside', 1)">
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <!-- Other Slider -->
+      <section class="slider-section">
+        <h2>Others View</h2>
+        <div class="slider" id="othersSlider">
+          <button class="prev" onclick="changeSlide('Others', -1)">
+            &#10094;
+          </button>
+          <img class="slide others-slide" src="other1.jpeg" alt="Others 1" />
+          <img class="slide others-slide" src="other2.jpeg" alt="Others 2" />
+          <img class="slide others-slide" src="other3.jpeg" alt="Others 3" />
+          <img class="slide others-slide" src="other4.jpeg" alt="Others 4" />
+          <button class="next" onclick="changeSlide('others', 1)">
+            &#10095;
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- Book Button -->
+    <section id="bookingForm">
+      <button onclick="redirectToWhatsApp()">Book Now</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 Goa Tourist Holiday Home | Contact: +91-8805504373</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
